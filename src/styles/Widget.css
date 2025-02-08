@@ -1,0 +1,428 @@
+/*ogólne*/
+.widget-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text);
+  background-color: var(--widget-background);
+  border-radius: 8px;
+}
+
+.widget-content-header {
+  width: 100%;
+  background-color: var(--lime);
+  color: var(--headers-text);
+  margin-top: 0px;
+  padding-left: 0.5vw;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 3.5vh;
+  font-size: 2vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/*Wykres*/
+.sales-chart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.chart-container {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: calc(100% - 270px);
+  height: 48vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--widget-table);
+  border-radius: 10px;
+  border: 1px solid var(--lime-60);
+  background-color: var(--widget-table);
+}
+
+.chart-controls-container {
+  margin-top: 4vh;
+  margin-right: 20px;
+  width: 200px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--widget-background);
+  border-radius: 10px;
+  border: 1px solid var(--lime-60);
+  background-color: var(--widget-table);
+}
+
+.chart-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  height: 40vh;
+}
+
+.chart-options {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.6vh;
+  font-weight: 300;
+}
+
+.chart-options-header {
+  margin-bottom: -2px;
+  width: 100%;
+  font-size: 1.5vh;
+  font-weight: bold;
+  color: var(--text);
+  padding: 0.5vh;
+  text-align: left;
+}
+
+.chart-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  color: var(--text);
+  padding: 0.5vh;
+}
+
+.chart-options input {
+  appearance: none;
+  width: 1vh;
+  height: 1vh;
+  border-radius: 50%;
+  outline: 1px solid var(--text);
+  transition: 0.2s ease;
+}
+
+.chart-options input:checked {
+  background-color: var(--lime-60);
+  outline: 1px solid var(--text);
+}
+
+/*zamówienia*/
+.widget-orders-container {
+  width: 92%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.widget-orders-category {
+  width: 31%;
+  height: 90%;
+  background-color: var(--widget-table);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.widget-orders-category-header {
+  width: 100%;
+  height: 20%;
+  background-color: var(--lime-60);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  font-size: 1.8vh;
+  font-weight: 200;
+}
+
+.widget-orders-category-header-goto {
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+  color: var(--text);
+}
+
+.widget-orders-category-header-goto-header {
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+  color: var(--headers-text);
+}
+
+.widget-orders-category-header-label {
+  width: 100%;
+  text-align: center;
+  margin-left: 25px;
+}
+
+.widget-orders-category-number {
+  font-size: 4vh;
+  margin-top: 3.2vh;
+  color: var(--text);
+}
+
+/*jakość sprzedaży*/
+
+.overall-rating {
+  width: 85%;
+  height: 14%;
+  background-color: var(--widget-table);
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 1.7vh;
+  font-weight: 300;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+}
+
+.rating-text {
+  margin-left: 1vw;
+}
+
+.rating-score {
+  width: 15%;
+  height: 100%;
+  background-color: var(--lime-60);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2vw;
+  font-weight: 300;
+}
+
+.rating-table {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 43.5%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--widget-table);
+  font-size: 1.7vh;
+  font-weight: 300;
+}
+
+.rating-row-header {
+  display: flex;
+  width: 100%;
+  height: 35%;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--lime-60);
+}
+.rating-row {
+  display: flex;
+  width: 100%;
+  height: 65%;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-cell-top {
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating-cell {
+  flex: 1;
+  text-align: center;
+  color: var(--text);
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1vh;
+}
+
+.rating-cell-mid {
+  border-left: 1px solid var(--lime-60);
+  border-right: 1px solid var(--lime-60);
+}
+
+/*opinie kupujących*/
+.opinions-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1.2vw;
+  font-size: 1.6vh;
+  font-weight: 300;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+}
+
+.opinions-filters label {
+  display: flex;
+  align-items: center;
+  gap: 0.3vw;
+  color: var(--text);
+}
+
+.opinions-filters input {
+  appearance: none;
+  width: 1vh;
+  height: 1vh;
+  border-radius: 50%;
+  outline: 1px solid var(--text);
+  transition: 0.2s ease;
+}
+
+.opinions-filters input:checked {
+  background-color: var(--lime-60);
+  outline: 1px solid var(--text);
+}
+
+.opinions-toggle {
+  font-size: 1.7vh;
+  font-weight: bold;
+}
+
+.opinions-table {
+  display: table;
+  width: 90%;
+  max-height: 70%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--widget-table);
+  font-size: 1.7vh;
+  font-weight: 300;
+}
+
+.opinions-row {
+  display: table-row;
+  width: 100%;
+}
+
+.opinions-row.header {
+  background-color: var(--lime-20-50);
+  font-weight: bold;
+  border-bottom: 1px solid var(--lime-20-50);
+  height: 3.5vh;
+}
+
+.opinions-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--text);
+  padding: 0.7vh;
+  border-right: 1px solid var(--lime-60);
+  height: 25px;
+  font-size: 12px;
+}
+
+.opinions-cell:last-child {
+  border-right: none;
+}
+
+.opinions-cell-right-header {
+  border-right: 1px solid var(--lime-60);
+}
+
+.opinions-cell-right {
+  border-right: 1px solid var(--lime-60);
+  border-top: 1px solid var(--lime-60);
+}
+
+.opinions-cell-mark {
+  width: 3vw !important;
+}
+
+.opinions-cell-right-left {
+  border-top: 1px solid var(--lime-60);
+}
+
+.mark-cell {
+  width: 3vw !important;
+}
+
+.nodata-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Styl dla popupu – pełny ekranowy overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: var(--widget-background);
+  border-radius: 8px;
+  width: 800px;
+  height: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--lime);
+  color: var(--headers-text);
+  padding: 0.5em;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 1.8vh;
+  font-weight: bold;
+}
+
+.popup-close-button {
+  background: transparent;
+  border: none;
+  color: var(--headers-text);
+  font-size: 1.8vh;
+  cursor: pointer;
+}
+
+.popup-body {
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1.8vh;
+  color: var(--text);
+}

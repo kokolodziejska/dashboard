@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.left-menu {
+  position: fixed;
+  top: max(7.4vh, 40px);
+  left: 0;
+  width: 15.78vw;
+  height: max(calc(100vh - max(7.4vh, 40px) - max(3.7vh, 20px)), 100px);
+  background-color: var(--menu-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+  border-right: 3px solid var(--lime);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-menu-quote {
+  font-family: "Pacifico", cursive;
+  color: var(--text);
+  font-size: 2.5vh;
+  font-weight: 300;
+}
+
+.left-menu-shop-button-contaoner {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5vh;
+  width: 90%;
+  margin-top: 8vh;
+  height: 53vh;
+  font-weight: 300;
+}
+
+.left-menu-shop-button {
+  background-color: var(--menu-background);
+  border: var(--menu-background);
+  color: var(--text);
+  width: 90%;
+  font-size: 2vh;
+  text-align: left;
+  margin-left: 1vw;
+}
+.left-menu-shop-button.active {
+  color: var(--lime);
+}
+
+.leftmenu-user {
+  color: var(--lime);
+  font-weight: 400;
+  font-size: 1.7vh;
+}
+.user-icon {
+  margin-right: 0.5vw;
+}
+
+.left-menu-button-contaoner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2vh;
+}
+
+.left-menu-button {
+  background-color: var(--lime);
+  color: balck;
+  font-size: 1.7vh;
+  height: 4vh;
+  width: 9vw;
+  border: 2px solid black;
+  border-radius: 1vh;
+  font-weight: 650;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.297);
+}
+
+@media screen and (max-width: 1440px) {
+  .left-menu {
+    width: 227px;
+    transform: translateX(-100%);
+    position: fixed;
+    z-index: 2000;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .left-menu-button {
+    width: 130px;
+  }
+
+  .left-menu.visible {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,176 @@
+export const languages = {
+  pl: {
+    //Header
+    shopName: "MyShop",
+    langToggle: "PL/EN",
+
+    //Menu
+    logoutButton: "Wyloguj",
+    settingsButton: "Ustawienia",
+    noLogin: "Nie zalogowano",
+
+    //Login
+    login: "Logowanie",
+    username: "Nazwa użytkownika:",
+    password: "Hasło:",
+    errorLogin: "Nieprawidłowe dane logowania!",
+    loginButton: "Zaloguj się",
+
+    //Widgets
+    chartHeader: "Wykres sprzedaży",
+    loadingChart: "Ładowanie wykresu...",
+    chartTitle: "Wykres sprzedaży",
+    timeLabel: "Czas",
+    valueLabel: "Wartość [zł]",
+    quantityLabel: "Ilość",
+    dataType: "Dane",
+    revenue: "Obrót",
+    sales: "Liczba sprzedanych sztuk",
+    chartType: "Rodzaj wykresu",
+    barChart: "Słupkowy",
+    lineChart: "Liniowy",
+    timeRange: "Zakres czasu",
+    today: "Dziś",
+    thisWeek: "Ten tydzień",
+    lastWeek: "Poprzedni tydzień",
+
+    opinionsHeader: "Opinie kupujących",
+    noOpinions: "Brak opinii do wyświetlenia.",
+    loadingOpinions: "Ładowanie opinii...",
+    allToggle: "wszystkie",
+    positiveToggle: "pozytywne",
+    negativeToggle: "negatywne",
+    ratingTitle: "Ocena",
+    opinionTitle: "Opinia",
+
+    ordersHeader: "Zamówienia",
+    noOrders: "Brak zamówień do wyświetlenia.",
+    loadingOrders: "Brak zamówień do wyświetlenia.",
+    sendTitle: "Niewysłane",
+    payTitle: "Niepłacone",
+    returnsTitle: "Zwroty",
+
+    qualityHeader: "Jakość sprzedaży",
+    noQuality: "Jakkość nie została dodana.",
+    loadingQuality: "Ładowanie zamówień...",
+    categoryS: "Ekspert",
+    categoryA: "Zaawansowany",
+    categoryB: "Średniak",
+    categoryC: "Początkujący",
+    categoryD: "Nowicjusz",
+    categories: {
+      obsługa_klienta: "Obsługa klienta",
+      czas_realizacji: "Czas realizacji",
+      dostępność_produktów: "Dostępność produktów",
+      zadowolenie_klientów: "Zadowolenie klientów",
+      ceny_promocje: "Ceny i promocje",
+      prezentacja_produktów: "Prezentacja produktów",
+    },
+
+    rankingHeader: "Ranking ofert",
+    noRanking: "Brak ofert.",
+    oftenToggle: "najczęściej kupowane",
+    rarelyToggle: "najrzadziej kupowane",
+    nameRank: "Nazwa",
+    pictureRank: "Miniatura zdjęcia",
+    amoutRank: "Sprzedane sztuki",
+    revenueRank: "Obrót",
+    viewsRank: "Wyświetlenia",
+
+    popupInfo: "Tu kiedyś coś będzie!",
+
+    //Quotes
+    quote1: "Mniej znaczy więcej!",
+    quote2: "Cisza jest złotem!",
+    quote3: "W prostocie siła!",
+    quote4: "Małe kroki!",
+    quote5: "Czas leczy rany!",
+  },
+  en: {
+    //Header
+    shopName: "MyShop",
+    langToggle: "EN/PL",
+
+    //Menu
+    logoutButton: "Logout",
+    settingsButton: "Settings",
+    noLogin: "Not logged in",
+
+    //Login
+    login: "Login",
+    username: "Username:",
+    password: "Password:",
+    errorLogin: "Invalid login credentials!",
+    loginButton: "Login",
+
+    //Widgets
+    chartHeader: "Sales chart",
+    loadingChart: "Loading chart...",
+    chartTitle: "Sales chart",
+    timeLabel: "Time",
+    valueLabel: "Value [zł]",
+    quantityLabel: "Quantity",
+    dataType: "Data",
+    revenue: "Revenue",
+    sales: "Number of sold items",
+    chartType: "Chart type",
+    barChart: "Bar",
+    lineChart: "Line",
+    timeRange: "Time range",
+    today: "Today",
+    thisWeek: "This week",
+    lastWeek: "Last week",
+
+    opinionsHeader: "Buyer's opinions",
+    noOpinions: "No opinions to display.",
+    loadingOpinions: "Loading opinions...",
+    allToggle: "all",
+    positiveToggle: "positive",
+    negativeToggle: "negative",
+    ratingTitle: "Rating",
+    opinionTitle: "Opinion",
+
+    ordersHeader: "Orders",
+    noOrders: "No orders to display.",
+    loadingOrders: "Loading orders...",
+    sendTitle: "Unsent",
+    payTitle: "Unpaid",
+    returnsTitle: "Returns",
+
+    qualityHeader: "Sales quality",
+    noQuality: "Quality not added.",
+    loadingQuality: "Loading orders...",
+    categoryS: "Expert",
+    categoryA: "Advanced",
+    categoryB: "Average",
+    categoryC: "Begginer",
+    categoryD: "Novice",
+    categories: {
+      obsługa_klienta: "Customer Service",
+      czas_realizacji: "Execution Time",
+      dostępność_produktów: "Product Availability",
+      zadowolenie_klientów: "Customer Satisfaction",
+      ceny_promocje: "Prices & Promotions",
+      prezentacja_produktów: "Product Presentation",
+    },
+
+    rankingHeader: "Offer ranking",
+    noRanking: "No offers.",
+    oftenToggle: "most frequently purchased",
+    rarelyToggle: "least frequently purchased",
+    nameRank: "Name",
+    pictureRank: "Photo thumbnail",
+    amoutRank: "Sold items",
+    revenueRank: "Revenue",
+    viewsRank: "Views",
+
+    popupInfo: "There will be something!",
+
+    //Quotes
+    quote1: "Less is more!",
+    quote2: "Silence is golden!",
+    quote3: "Power in simplicity!",
+    quote4: "Small steps!",
+    quote5: "Time heals!",
+  },
+};

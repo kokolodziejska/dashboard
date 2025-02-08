@@ -1,0 +1,102 @@
+@import "../global.css";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.panel-logowania {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background-color: var(--menu-background);
+  border-radius: 10px;
+  min-width: 600px;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.login-text {
+  font-size: 47px;
+  font-weight: 600;
+  color: var(--lime);
+  margin-top: 55px;
+}
+
+.login-form {
+  margin-top: 13px;
+  min-width: 450px;
+  min-height: 400px;
+  gap: 12px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.login-label {
+  width: 100%;
+  font-size: 24px;
+  margin-top: 25px;
+  color: var(--text);
+}
+
+.login-input {
+  width: 100%;
+  font-size: 22;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-background);
+  color: var(--text);
+}
+.login-button-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-button {
+  margin-top: 40px;
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: #6faa40;
+  border-radius: 15px;
+  border: 3px solid white;
+  font-size: 24px;
+  font-weight: 450;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.252);
+}
+
+.login-button:hover {
+  background-color: #619635;
+}
+
+.error {
+  color: red;
+  font-size: 20px;
+  margin-top: 15px;
+}

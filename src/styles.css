@@ -1,0 +1,20 @@
+.header {
+  background-color: #78d42e;
+  width: 100vw;
+  height: 80px;
+}
+
+.App {
+  font-family: Lato, sans-serif;
+  text-align: center;
+  background-color: black;
+  color: rgb(229, 75, 100);
+  margin-top: 200px;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
